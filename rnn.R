@@ -101,9 +101,9 @@ path <- str_replace(path, fixed(".tar.gz"), "/")
 # QA1 with 10,000 samples
 # challenge = '%stasks_1-20_v1-2/en-10k/qa1_single-supporting-fact_%s.txt'
 # QA2 with 1000 samples
-challenge <- "%stasks_1-20_v1-2/en/qa2_two-supporting-facts_%s.txt"
+# challenge <- "%stasks_1-20_v1-2/en/qa2_two-supporting-facts_%s.txt"
 # QA2 with 10,000 samples
-# challenge = '%stasks_1-20_v1-2/en-10k/qa2_two-supporting-facts_%s.txt'
+challenge = '%stasks_1-20_v1-2/en-10k/qa2_two-supporting-facts_%s.txt'
 
 train <- read_lines(sprintf(challenge, path, "train")) %>%
   parse_stories() %>%
