@@ -82,7 +82,7 @@ challenges <- list(
   two_supporting_facts_10k = "%stasks_1-20_v1-2/en-10k/qa2_two-supporting-facts_%s.txt"
 )
 
-challenge_type <- "single_supporting_fact_10k"
+challenge_type <- "two_supporting_facts_10k"
 challenge <- challenges[[challenge_type]]
 max_length <- 999999
 
