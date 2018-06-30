@@ -199,3 +199,11 @@ model %>% fit(
   epochs = 120,
   validation_data = list(list(test_vec$stories, test_vec$questions), test_vec$answers)
 )
+
+evaluation <- model %>% evaluate(
+  x = list(test_vec$stories, test_vec$questions),
+  y = test_vec$answers,
+  batch_size = 32
+)
+
+evaluation
